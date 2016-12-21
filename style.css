@@ -1,0 +1,36 @@
+.tlsummary-remove {
+    all:revert;
+}
+.tlsummary-popup {
+    display:block;
+    position:fixed !important;
+    top:25%;
+    left: 30%;
+    width: 650px;
+    height: 190px;
+    padding: 10px;
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    border-radius: 2px;
+    border: 1px solid rgb(100,100,100);
+    z-index: 1000000000;
+}
+.tlsummary-popup > textarea {
+    resize:none;
+    border-radius: 2px;
+}
+.tlsummary-input {
+    width: 100%;
+    min-height: 75%;
+    max-height: 300%;
+}
+.tlsummary-buttons {
+    display:inline;
+}
+.tlsummary-exitbutton {
+    margin-top: 5px !important;
+
+}
+.tlsummary-wasthisuseful {
+    float: right;
+    margin-top: 5px !important;
+}

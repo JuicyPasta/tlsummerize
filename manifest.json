@@ -1,0 +1,32 @@
+{
+    "name": "tlsummary",
+    "version": "1.1",
+    "description": "summerizes and highlights important selections of text",
+    "permissions": [
+        "contextMenus"
+    ],
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js":["skimmer.js", "thirdparty/jquery-3.1.1.min.js", "thirdparty/jquery-ui-1.12.1.min.js"],
+            "css": ["style.css"],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_title": "tlskimmer",
+        "default_icon": "icon.png"
+    },
+    "manifest_version": 2
+}
